@@ -1,0 +1,20 @@
+{
+  "name": "torii",
+  "version": "1.0.0",
+  "description": "torii home assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=dev node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "json-schema": ">=0.4.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}

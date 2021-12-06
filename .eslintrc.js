@@ -1,0 +1,48 @@
+module.exports = {
+  env: {
+    node: true,
+    commonjs: true,
+    es6: true,
+    mocha: true,
+    jest: true,
+  },
+  extends: ['airbnb-base', 'prettier', 'plugin:vue/base'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
+  rules: {
+    'no-console': 'off',
+    'no-use-before-define': 'off',
+    'no-debugger': 'error',
+    'global-require': 'off',
+    camelcase: 'off',
+    'no-param-reassign': 'warn',
+    'no-underscore-dangle': ['error', { allow: ['_id', '_update'] }],
+    'max-len': ['error', { code: 120, ignoreTemplateLiterals: true, ignoreStrings: true, ignoreComments: true }],
+    semi: ['error', 'never'],
+    'no-plusplus': 'warn',
+    'consistent-return': 'warn',
+    radix: ['warn', 'as-needed'],
+    'no-prototype-builtins': 'off',
+    'arrow-parens': ['error', 'as-needed'],
+    curly: ['error', 'multi-line'],
+    'no-empty': ['error', { allowEmptyCatch: true }],
+    // 'import/extensions': ['error', 'never'],
+    'import/prefer-default-export': 'off',
+    'prefer-destructuring': ['warn', { object: true, array: false }],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: 'var', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'if' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+    ],
+  },
+  settings: {
+    'import/extensions': ['node_modules', '.(json|css)$'],
+  },
+}
