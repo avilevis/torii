@@ -1,0 +1,14 @@
+{
+  "name": "currency-updater",
+  "version": "1.0.0",
+  "description": "currency updater service",
+  "main": "currency-updater-service.js",
+  "scripts": {
+    "start": "node currency-updater-service.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "~0.24.0"
+  }
+}

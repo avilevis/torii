@@ -3,7 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const router = require('./router')
 // const path = require('path')
-const { serverPort } = require('./consts')
+const { serverPort } = require('./const')
 const app = express()
 const bodyParser = require('body-parser')
 
