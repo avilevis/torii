@@ -1,5 +1,5 @@
 module.exports = {
-  msTimer: 1000 * 5, // one min
+  msTimer: 1000 * 60, // one min
   currencyApiUrl: 'https://api.coinbase.com/v2/exchange-rates',
   currencyObjList: {
     BTC: {
